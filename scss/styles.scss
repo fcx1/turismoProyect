@@ -1,4 +1,8 @@
 $tittlesColor :white;
+$backgroundColorBody1:rgb(120, 153, 212);
+$backgroundColorBody2:rgb(19, 69, 160);
+$backgroundColorNav1:rgb(118, 172, 243);
+$backgroundColorNav2:rgb(120, 153, 212);
 
 *{
     padding:0px;
@@ -8,7 +12,7 @@ $tittlesColor :white;
 
 
 body{
-    background: linear-gradient(to right bottom,rgb(120, 153, 212),rgb(19, 69, 160));
+    background: linear-gradient(to right bottom,$backgroundColorBody1,$backgroundColorBody2);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -52,7 +56,7 @@ h1,h2,h3{
     align-items: center;
     height: 8vh;
     justify-content: space-around;
-    background: linear-gradient(to right bottom,rgb(118, 172, 243),rgb(120, 153, 212));
+    background: linear-gradient(to right bottom,$backgroundColorNav1,$backgroundColorNav2);
     
     .nav-Bar__logo{
         display: flex;
@@ -245,7 +249,7 @@ h1,h2,h3{
             padding: 10px 20px;
 
             .card__title{
-                font-size: 25px;
+                font-size: 14px;
                 font-weight: 600;
                 color: $tittlesColor;
             }
@@ -269,7 +273,7 @@ h1,h2,h3{
                 margin: 10px 0;
 
                 button{
-                    background:$tittlesColor;
+                    background:$backgroundColorBody2;
                     color: #fff;
                     border: none;
                     outline: none;
