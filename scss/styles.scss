@@ -28,15 +28,17 @@ body{
     }
 }
 
-.tittles__titleH1,.tittles__titleH5{
+.tittles__titleH1,.tittles__titleH2{
     color: $tittlesColor;
     margin-left: 30px;
-    font-size: 40px;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 .tittles__titleH1{
     margin-top: 50px;
-    
+    font-size: 40px;
+}
+.tittles__titleH2{
+    font-size: 5px;
 }
 
 h1,h2,h3{
