@@ -1,4 +1,4 @@
-$tittlesColor :white;
+$tittlesColor :#fff;
 
 *{
     padding:0px;
@@ -8,105 +8,148 @@ $tittlesColor :white;
 
 
 body{
-    background: linear-gradient(to right bottom,rgb(120, 153, 212),rgb(19, 69, 160));
+    //background: linear-gradient(to right bottom,rgb(120, 153, 212),rgb(19, 69, 160));
+    background-image: url("../images/wallpaper1920-1080.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
     backdrop-filter: blur(3px);
-}
-
-
-.tempWidget{
     display: flex;
-    flex-direction: row-reverse;
-    height: 20rem;
-    margin: -23px 0px;
+    flex-direction: column;
+    //background-color: lightgreen;
 
-    a{
-        width: 25vh;
-    }
-}
-
-.tittles__titleH1,.tittles__titleH5{
-    color: $tittlesColor;
-    margin-left: 30px;
-    font-size: 40px;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-.tittles__titleH1{
-    margin-top: 50px;
-    
-}
-
-h1,h2,h3{
-    color: $tittlesColor;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-//Barra de navegacion//
-.nav-Bar {
-    display: flex;
-    align-items: center;
-    height: 8vh;
-    justify-content: space-around;
-    background: linear-gradient(to right bottom,rgb(118, 172, 243),rgb(120, 153, 212));
-    
-    .nav-Bar__logo{
+    .tempWidget{
         display: flex;
-        justify-content: flex-start;
-        margin-right: 90vh;
+        flex-direction: row-reverse;
+        height: 20rem;
+        
     
-        :hover{
-            transform: scale(1.2,1.2);
-            transition: transform 0.5s; 
+        a{
+            width: 25vh;
         }
     }
     
-    .nav-Bar__nav-linksContainer {
-        display: flex;
-        justify-content: space-around;
-        width: 40%;
+    .tittles__titleH1,.tittles__titleH5{
+        color: $tittlesColor;
+        margin-left: 30px;
+        font-size: 40px;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    .tittles__titleH1{
+        margin-top: 50px;
+    }
     
-        :hover{
-            transform: scale(1.2,1.2);
-            transition: transform 0.5s; 
+    h1,h2,h3{
+        color: $tittlesColor;
+        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    }
+    
+    //Barra de navegacion//
+    .nav-Bar {
+        display: flex;
+        align-items: center;
+        height: 8vh;
+        justify-content: space-around;
+        background: linear-gradient(to right bottom,rgb(118, 172, 243),rgb(120, 153, 212));
+        
+        .nav-Bar__logo{
+            display: flex;
+            justify-content: flex-start;
+            margin-right: 90vh;
+        
+            :hover{
+                transform: scale(1.1);
+                transition: transform 0.5s; 
+            }
         }
         
-        .nav-Bar__link{
-            list-style: none;
-            letter-spacing: 1px;
-            width: 150px;
-            justify-content: center;
+        .nav-Bar__nav-linksContainer {
+            display: flex;
+            justify-content: space-around;
+            width: 40%;
+        
+            :hover{
+                transform: scale(1.1);
+                transition: transform 0.5s; 
+            }
             
-            a{
-                text-decoration: none;
-                font-weight: bold;
-                font-size: 16px;
-                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-                color:  $tittlesColor;
+            .nav-Bar__link{
+                list-style: none;
+                letter-spacing: 1px;
+                width: 150px;
+                justify-content: center;
+                
+                a{
+                    text-decoration: none;
+                    font-weight: bold;
+                    font-size: 16px;
+                    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                    color:  $tittlesColor;
+                }
+            }
+        }
+        .nav-Bar__nav-button{
+            display: none;
+            cursor: pointer;
+            position:fixed;
+        
+            div{
+                width: 25px;
+                height: 5px;
+                background-color: rgb(226,226,226);
+                margin: 5px;
+                transition: all 0.5s ease;
+            }
+        }
+        
+    }
+    
+    .pie{
+        
+        
+        .pie__nav-Bar{
+            display: flex;
+            align-items: center;
+            height: 8vh;
+            justify-content: space-around;
+            //background: linear-gradient(to right bottom,rgb(118, 172, 243),rgb(120, 153, 212));
+            margin-top: 325px;
+            
+            .pie__nav-linksContainer {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                width: 100%;
+            
+                :hover{
+                    transform: scale(1.2);
+                    transition: transform 0.5s; 
+                }
+                
+                .pie__link{
+                    list-style: none;
+                    letter-spacing: 1px;
+                    width: 150px;
+                    justify-content: center;
+                    
+                    a{
+                        text-decoration: none;
+                        font-weight: bold;
+                        font-size: 16px;
+                        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                        color:  $tittlesColor;
+                    }
+                }
             }
         }
     }
-    
 }
 
-.pie{
-    margin-top: 190px;
-}
 
-.nav-Bar__nav-button{
-    display: none;
-    cursor: pointer;
 
-    div{
-        width: 25px;
-        height: 5px;
-        background-color: rgb(226,226,226);
-        margin: 5px;
-        transition: all 0.5s ease;
-    }
-}
+
+
 
 
 
@@ -139,10 +182,48 @@ h1,h2,h3{
     }
     .nav-Bar__nav-button{
         display: block;
-        margin-right: 5vh;
+        background-color: red;
+    }
+    .pie{
+        
+        
     }
 }
 
+@media screen and (max-width:512px){
+    body{
+        overflow-x: hidden; 
+     }
+    .nav-Bar__nav-linksContainer{
+        position: absolute;
+        right: 0px;
+        height: 92vh;
+        top: 8vh;
+        background-color:  rgb(118, 172, 243);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 40%;
+        transform: translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    .nav-Bar__link{
+        opacity:0 ;
+    }
+    .nav-Bar__nav-button{
+        display: block;
+        background-color: blue;
+    }
+    .pie{
+        .pie__description{
+            opacity: 0;
+        }
+    }
+}
+
+.navbar{
+    background-color: red;
+}
 
 //Animacion del menu Hamburguesa
 .nav-active{
@@ -176,6 +257,17 @@ h1,h2,h3{
 
 .frmContacto{
     margin: 10vh 5vh;
+
+    .form-label{
+        color:$tittlesColor;
+        font-weight: bold;
+    }
+    .form-check-label{
+        color:$tittlesColor;
+    }
+    .form-control{
+        opacity: 0.4;
+    }
 }
 
 /*////  CSS queHacer.html  ////*/
@@ -202,26 +294,6 @@ h1,h2,h3{
 
 
 /*////  CSS dondeIr.html  ////*/
-/*
-.carouselContainer{
-    display: flex;
-    justify-content: center;
-    margin: 20px 0px;
-}
-
-.carousel-inner {
-    .carousel-item{
-        width: 800px;
-        height:500px;
-    }
-
-    img{
-        height: 100%;
-        width: 100%;
-        object-fit:cover ;
-    }
-}
-*/
 
 .dondeIrMain{
     display: grid;
@@ -238,6 +310,7 @@ h1,h2,h3{
     .card{
         flex: 1;
         margin: 0 10px;
+        
         
         .card__content {
             padding: 10px 20px;
@@ -258,7 +331,7 @@ h1,h2,h3{
             .card__text{
                 text-align: justify;
                 margin: 10px 0;
-                color: white;
+                color: $tittlesColor;
             }
 
             .card__btn {
@@ -267,7 +340,7 @@ h1,h2,h3{
                 margin: 10px 0;
 
                 button{
-                    background:$tittlesColor;
+                    background: rgb(118, 172, 243);
                     color: #fff;
                     border: none;
                     outline: none;
@@ -286,7 +359,7 @@ h1,h2,h3{
         }
 
         .card__img {
-            height: 200px;
+            height: 270px;
             width: 100%;
 
             img{
