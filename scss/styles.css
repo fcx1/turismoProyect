@@ -365,6 +365,10 @@ body .pie .pie__nav-Bar .pie__nav-linksContainer .pie__link a {
   justify-items: center;
 }
 
+.navbar {
+  opacity: 0.4;
+}
+
 /*////  CSS dondeIr.html  ////*/
 .dondeIrMain {
   display: -ms-grid;
