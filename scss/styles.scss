@@ -1,4 +1,9 @@
+
 $tittlesColor :#fff;
+$backgroundColorBody1:rgb(120, 153, 212);
+$backgroundColorBody2:rgb(19, 69, 160);
+$backgroundColorNav1:rgb(118, 172, 243);
+$backgroundColorNav2:rgb(120, 153, 212);
 
 *{
     padding:0px;
@@ -19,7 +24,42 @@ body{
     flex-direction: column;
     //background-color: lightgreen;
 
+
+    a{
+        width: 25vh;
+    }
+}
+
+.tittles__titleH1,.tittles__titleH2{
+    color: $tittlesColor;
+    margin-left: 30px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.tittles__titleH1{
+    margin-top: 50px;
+    font-size: 40px;
+}
+.tittles__titleH2{
+    font-size: 5px;
+}
+
+h1,h2,h3{
+    color: $tittlesColor;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+//Barra de navegacion//
+.nav-Bar {
+    display: flex;
+    align-items: center;
+    height: 8vh;
+    justify-content: space-around;
+    background: linear-gradient(to right bottom,$backgroundColorNav1,$backgroundColorNav2);
+    
+    .nav-Bar__logo{
+
     .tempWidget{
+
         display: flex;
         flex-direction: row-reverse;
         height: 20rem;
@@ -320,7 +360,7 @@ body{
             padding: 10px 20px;
 
             .card__title{
-                font-size: 25px;
+                font-size: 14px;
                 font-weight: 600;
                 color: $tittlesColor;
             }
@@ -344,7 +384,8 @@ body{
                 margin: 10px 0;
 
                 button{
-                    background: rgb(118, 172, 243);
+                  
+                    background:$backgroundColorBody2;
                     color: #fff;
                     border: none;
                     outline: none;

@@ -37,15 +37,20 @@ body .tempWidget a {
   width: 25vh;
 }
 
-body .tittles__titleH1, body .tittles__titleH5 {
+
+.tittles__titleH1, .tittles__titleH2 {
   color: #fff;
   margin-left: 30px;
-  font-size: 40px;
   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 body .tittles__titleH1 {
   margin-top: 50px;
+  font-size: 40px;
+}
+
+.tittles__titleH2 {
+  font-size: 5px;
 }
 
 body h1, body h2, body h3 {
@@ -398,7 +403,7 @@ body .pie .pie__nav-Bar .pie__nav-linksContainer .pie__link a {
 }
 
 .slider .card .card__content .card__title {
-  font-size: 25px;
+  font-size: 14px;
   font-weight: 600;
   color: #fff;
 }
@@ -423,7 +428,8 @@ body .pie .pie__nav-Bar .pie__nav-linksContainer .pie__link a {
 }
 
 .slider .card .card__content .card__btn button {
-  background: #76acf3;
+
+  background: #1345a0;
   color: #fff;
   border: none;
   outline: none;
