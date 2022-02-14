@@ -229,3 +229,6 @@ footer {
     opacity: 0;
 }
 
+footer {
+    display: block;
+  }
